@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7703" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zmp-NK-9Hq">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Diary-->
+        <scene sceneID="cww-Cf-zFZ">
+            <objects>
+                <tableViewController id="SqE-3W-gNU" customClass="ErmiasTableViewController" customModule="ermiasTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lWM-9I-Irh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Detail" id="vv7-dh-Yso">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vv7-dh-Yso" id="IDL-qa-GRC">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="SfP-3a-SEz" kind="show" identifier="shit" id="P8h-gJ-IHo"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SqE-3W-gNU" id="LS3-CZ-JmN"/>
+                            <outlet property="delegate" destination="SqE-3W-gNU" id="Oxz-tR-Urg"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Diary" id="a9A-mx-gRJ">
+                        <barButtonItem key="rightBarButtonItem" title="New" id="Ndh-iM-Dzc">
+                            <connections>
+                                <segue destination="N7B-v7-vL7" kind="show" identifier="NewEntry" id="UA3-Uv-46O"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="lWM-9I-Irh" id="ngp-va-Ud9"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v8t-sK-wuL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112" y="347"/>
+        </scene>
+        <!--New Entry-->
+        <scene sceneID="wiT-3l-B37">
+            <objects>
+                <viewController id="N7B-v7-vL7" customClass="NewEntryViewController" customModule="ermiasTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="byo-Bd-9iV"/>
+                        <viewControllerLayoutGuide type="bottom" id="ae6-Ag-UR9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9vR-Dw-SZH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ysw-mC-n1X">
+                                <rect key="frame" x="0.0" y="64" width="320" height="480"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Entry" id="YTd-gc-TFD">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="C8L-1l-UMm">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="N7B-v7-vL7" id="TSq-nH-XdP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="TextView" destination="Ysw-mC-n1X" id="k3S-ZU-hvG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="POM-8T-m9N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="650" y="-289"/>
+        </scene>
+        <!--Post-->
+        <scene sceneID="CLd-Nx-LW8">
+            <objects>
+                <viewController id="SfP-3a-SEz" customClass="DetailViewController" customModule="ermiasTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1kL-vC-O8b"/>
+                        <viewControllerLayoutGuide type="bottom" id="gia-FK-28a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bIf-MW-avb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QX6-nl-bGA">
+                                <rect key="frame" x="24" y="89" width="423" height="462"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="423" id="6XA-8t-fZy"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QX6-nl-bGA" firstAttribute="top" secondItem="1kL-vC-O8b" secondAttribute="bottom" constant="25" id="SXE-6y-7YF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QX6-nl-bGA" secondAttribute="trailing" constant="137" id="elR-ta-X1s"/>
+                            <constraint firstItem="gia-FK-28a" firstAttribute="top" secondItem="QX6-nl-bGA" secondAttribute="bottom" constant="49" id="mS0-NY-sLv"/>
+                            <constraint firstItem="QX6-nl-bGA" firstAttribute="leading" secondItem="bIf-MW-avb" secondAttribute="leadingMargin" constant="8" id="rBg-Vm-LFJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="rBg-Vm-LFJ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Post" id="jOe-ff-0D4"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="TextView" destination="QX6-nl-bGA" id="2Qb-9O-cYq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NDc-M5-0pf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="800" y="347"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1oK-2m-g4i">
+            <objects>
+                <navigationController id="zmp-NK-9Hq" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5XV-wv-hxS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SqE-3W-gNU" kind="relationship" relationship="rootViewController" id="nzy-Be-1eO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ohb-sm-6oh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-708" y="347"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		600AE9251AEE2DC000F32AB6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600AE9241AEE2DC000F32AB6 /* DetailViewController.swift */; };
+		600AE9271AEE30F900F32AB6 /* NewEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600AE9261AEE30F900F32AB6 /* NewEntryViewController.swift */; };
+		602A50EC1AEE28E10005D1A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A50EB1AEE28E10005D1A8 /* AppDelegate.swift */; };
+		602A50EF1AEE28E10005D1A8 /* ermiasTableView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 602A50ED1AEE28E10005D1A8 /* ermiasTableView.xcdatamodeld */; };
+		602A50F11AEE28E10005D1A8 /* ErmiasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A50F01AEE28E10005D1A8 /* ErmiasTableViewController.swift */; };
+		602A50F41AEE28E10005D1A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602A50F21AEE28E10005D1A8 /* Main.storyboard */; };
+		602A50F61AEE28E10005D1A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 602A50F51AEE28E10005D1A8 /* Images.xcassets */; };
+		602A50F91AEE28E10005D1A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 602A50F71AEE28E10005D1A8 /* LaunchScreen.xib */; };
+		602A51051AEE28E10005D1A8 /* ermiasTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A51041AEE28E10005D1A8 /* ermiasTableViewTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		602A50FF1AEE28E10005D1A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 602A50DE1AEE28E10005D1A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 602A50E51AEE28E10005D1A8;
+			remoteInfo = ermiasTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		600AE9241AEE2DC000F32AB6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		600AE9261AEE30F900F32AB6 /* NewEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEntryViewController.swift; sourceTree = "<group>"; };
+		602A50E61AEE28E10005D1A8 /* ermiasTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ermiasTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		602A50EA1AEE28E10005D1A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		602A50EB1AEE28E10005D1A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		602A50EE1AEE28E10005D1A8 /* ermiasTableView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ermiasTableView.xcdatamodel; sourceTree = "<group>"; };
+		602A50F01AEE28E10005D1A8 /* ErmiasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErmiasTableViewController.swift; sourceTree = "<group>"; };
+		602A50F31AEE28E10005D1A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		602A50F51AEE28E10005D1A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		602A50F81AEE28E10005D1A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		602A50FE1AEE28E10005D1A8 /* ermiasTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ermiasTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		602A51031AEE28E10005D1A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		602A51041AEE28E10005D1A8 /* ermiasTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ermiasTableViewTests.swift; sourceTree = "<group>"; };
+		609ECCBB1AF8B8CE00FD5C03 /* ermiasTableView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ermiasTableView.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		602A50E31AEE28E10005D1A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602A50FB1AEE28E10005D1A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		602A50DD1AEE28E10005D1A8 = {
+			isa = PBXGroup;
+			children = (
+				602A50E81AEE28E10005D1A8 /* ermiasTableView */,
+				602A51011AEE28E10005D1A8 /* ermiasTableViewTests */,
+				602A50E71AEE28E10005D1A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		602A50E71AEE28E10005D1A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				602A50E61AEE28E10005D1A8 /* ermiasTableView.app */,
+				602A50FE1AEE28E10005D1A8 /* ermiasTableViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		602A50E81AEE28E10005D1A8 /* ermiasTableView */ = {
+			isa = PBXGroup;
+			children = (
+				609ECCBB1AF8B8CE00FD5C03 /* ermiasTableView.entitlements */,
+				602A50EB1AEE28E10005D1A8 /* AppDelegate.swift */,
+				602A50F01AEE28E10005D1A8 /* ErmiasTableViewController.swift */,
+				600AE9241AEE2DC000F32AB6 /* DetailViewController.swift */,
+				602A50F21AEE28E10005D1A8 /* Main.storyboard */,
+				600AE9261AEE30F900F32AB6 /* NewEntryViewController.swift */,
+				602A50F51AEE28E10005D1A8 /* Images.xcassets */,
+				602A50F71AEE28E10005D1A8 /* LaunchScreen.xib */,
+				602A50ED1AEE28E10005D1A8 /* ermiasTableView.xcdatamodeld */,
+				602A50E91AEE28E10005D1A8 /* Supporting Files */,
+			);
+			path = ermiasTableView;
+			sourceTree = "<group>";
+		};
+		602A50E91AEE28E10005D1A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				602A50EA1AEE28E10005D1A8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		602A51011AEE28E10005D1A8 /* ermiasTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				602A51041AEE28E10005D1A8 /* ermiasTableViewTests.swift */,
+				602A51021AEE28E10005D1A8 /* Supporting Files */,
+			);
+			path = ermiasTableViewTests;
+			sourceTree = "<group>";
+		};
+		602A51021AEE28E10005D1A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				602A51031AEE28E10005D1A8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		602A50E51AEE28E10005D1A8 /* ermiasTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 602A51081AEE28E10005D1A8 /* Build configuration list for PBXNativeTarget "ermiasTableView" */;
+			buildPhases = (
+				602A50E21AEE28E10005D1A8 /* Sources */,
+				602A50E31AEE28E10005D1A8 /* Frameworks */,
+				602A50E41AEE28E10005D1A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ermiasTableView;
+			productName = ermiasTableView;
+			productReference = 602A50E61AEE28E10005D1A8 /* ermiasTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		602A50FD1AEE28E10005D1A8 /* ermiasTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 602A510B1AEE28E10005D1A8 /* Build configuration list for PBXNativeTarget "ermiasTableViewTests" */;
+			buildPhases = (
+				602A50FA1AEE28E10005D1A8 /* Sources */,
+				602A50FB1AEE28E10005D1A8 /* Frameworks */,
+				602A50FC1AEE28E10005D1A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				602A51001AEE28E10005D1A8 /* PBXTargetDependency */,
+			);
+			name = ermiasTableViewTests;
+			productName = ermiasTableViewTests;
+			productReference = 602A50FE1AEE28E10005D1A8 /* ermiasTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		602A50DE1AEE28E10005D1A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Truc Truong";
+				TargetAttributes = {
+					602A50E51AEE28E10005D1A8 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 9E72ELFJ7N;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					602A50FD1AEE28E10005D1A8 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 602A50E51AEE28E10005D1A8;
+					};
+				};
+			};
+			buildConfigurationList = 602A50E11AEE28E10005D1A8 /* Build configuration list for PBXProject "ermiasTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 602A50DD1AEE28E10005D1A8;
+			productRefGroup = 602A50E71AEE28E10005D1A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				602A50E51AEE28E10005D1A8 /* ermiasTableView */,
+				602A50FD1AEE28E10005D1A8 /* ermiasTableViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		602A50E41AEE28E10005D1A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				602A50F41AEE28E10005D1A8 /* Main.storyboard in Resources */,
+				602A50F91AEE28E10005D1A8 /* LaunchScreen.xib in Resources */,
+				602A50F61AEE28E10005D1A8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602A50FC1AEE28E10005D1A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		602A50E21AEE28E10005D1A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				600AE9271AEE30F900F32AB6 /* NewEntryViewController.swift in Sources */,
+				602A50F11AEE28E10005D1A8 /* ErmiasTableViewController.swift in Sources */,
+				602A50EF1AEE28E10005D1A8 /* ermiasTableView.xcdatamodeld in Sources */,
+				602A50EC1AEE28E10005D1A8 /* AppDelegate.swift in Sources */,
+				600AE9251AEE2DC000F32AB6 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602A50FA1AEE28E10005D1A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				602A51051AEE28E10005D1A8 /* ermiasTableViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		602A51001AEE28E10005D1A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 602A50E51AEE28E10005D1A8 /* ermiasTableView */;
+			targetProxy = 602A50FF1AEE28E10005D1A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		602A50F21AEE28E10005D1A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				602A50F31AEE28E10005D1A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		602A50F71AEE28E10005D1A8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				602A50F81AEE28E10005D1A8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		602A51061AEE28E10005D1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		602A51071AEE28E10005D1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		602A51091AEE28E10005D1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ermiasTableView/ermiasTableView.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ermiasTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		602A510A1AEE28E10005D1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ermiasTableView/ermiasTableView.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ermiasTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		602A510C1AEE28E10005D1A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ermiasTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ermiasTableView.app/ermiasTableView";
+			};
+			name = Debug;
+		};
+		602A510D1AEE28E10005D1A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ermiasTableViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ermiasTableView.app/ermiasTableView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		602A50E11AEE28E10005D1A8 /* Build configuration list for PBXProject "ermiasTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				602A51061AEE28E10005D1A8 /* Debug */,
+				602A51071AEE28E10005D1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		602A51081AEE28E10005D1A8 /* Build configuration list for PBXNativeTarget "ermiasTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				602A51091AEE28E10005D1A8 /* Debug */,
+				602A510A1AEE28E10005D1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		602A510B1AEE28E10005D1A8 /* Build configuration list for PBXNativeTarget "ermiasTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				602A510C1AEE28E10005D1A8 /* Debug */,
+				602A510D1AEE28E10005D1A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		602A50ED1AEE28E10005D1A8 /* ermiasTableView.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				602A50EE1AEE28E10005D1A8 /* ermiasTableView.xcdatamodel */,
+			);
+			currentVersion = 602A50EE1AEE28E10005D1A8 /* ermiasTableView.xcdatamodel */;
+			path = ermiasTableView.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 602A50DE1AEE28E10005D1A8 /* Project object */;
+}
